@@ -46,7 +46,8 @@ class Dev(Configuration):
   CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
   CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-
+  MEDIA_ROOT = BASE_DIR / "media"
+  MEDIA_URL = "/media/"
 
   # Application definition
 
@@ -70,6 +71,7 @@ class Dev(Configuration):
       'rest_framework',
       'rest_framework.authtoken',
       'django_filters',
+      'versatileimagefield'
   ]
 
   MIDDLEWARE = [
